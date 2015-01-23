@@ -175,7 +175,7 @@ dt_tidy<-aggregate(dt_set_mean_std[,column_selected,with=FALSE],
 We rename the column 1 and 2 which are the activity_name and subject_id
 
 ```{r}
-setnames(dt_tidy, names(dt_tidy)[1:2], c("Activity Name", "Subject Id"))
+setnames(dt_tidy, names(dt_tidy)[1:2], c("Activity_Name", "Subject_Id"))
 ```
 
 

@@ -72,5 +72,7 @@ column_selected <- 1:((dim(dt_set_mean_std)[2])-3)
 dt_tidy<-aggregate(dt_set_mean_std[,column_selected,with=FALSE],
                    (list(dt_set_mean_std$activity_name, dt_set_mean_std$subject_id)),mean)
 
-setnames(dt_tidy, names(dt_tidy)[1:2], c("Activity Id", "Subject Id"))
+setnames(dt_tidy, names(dt_tidy)[1:2], c("Activity_Name", "Subject_Id"))
 
+f <- file.path(path, "tidy_data.txt")
+write.table(dt_tidy, f, quote = FALSE, sep = "\t", row.names = FALSE)

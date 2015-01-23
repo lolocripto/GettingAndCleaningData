@@ -1,6 +1,8 @@
 Getting and Cleaning Data.
+==========================
 
 This is the solution of the Assessment Project for the Course Getting and Cleaning Data.
+---------------------------------------------------------------------------------------
 
 This is what the exercise said:
 
@@ -24,11 +26,11 @@ This is what the exercise said:
 
 >Please upload the tidy data set created in step 5 of the instructions. Please upload your data set as a txt file created with write.table() using row.name=FALSE (do not cut and paste a dataset directly into the text box, as this may cause errors saving your submission).
 
-How it make works
------------------
+Instructions
+------------
 
-Set up the path with `setwd(my_path)`. `my_path` is the path where you have the file `run_analsis.R`. if you don't have the folder `UCI HAR Dataset` in `my_path`, the script will be downloaded in a file called `Dataset.zip` and unzip in `my_path` (You should have the library `unzip` installed in your machine for R).
+1. Set up the path with `setwd(my_path)`. `my_path` is the path where you have the file `run_analsis.R`. if you don't have the folder `UCI HAR Dataset` in `my_path`, the script will be downloaded in a file called `Dataset.zip` and unzip in `my_path` (You should have the library `unzip` installed in your machine for R).
 
-You can run the script run_analysis.r
+2. Run the script run_analysis.r
 
 It will generate a file called `tidy.txt`
